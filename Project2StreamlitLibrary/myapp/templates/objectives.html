@@ -1,0 +1,10 @@
+{% extends "base.html"%}{% block content%}
+<h1>SMART Objectives</h1>
+<ul>
+  {% for objective in objectives %}
+  <li>
+    {{objectives.title}}: {% if todo.completed %} Completed {%else%} Not Complete {% endif %}
+    </li>
+    {%endfor%}
+  </ul>
+{%endblock%}
